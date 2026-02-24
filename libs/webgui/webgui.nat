@@ -1,5 +1,4 @@
 <module="gui">
-addon.app() {
 const GUI = (() => {
     // CSS ve Animasyon Yönetimi
     const styleSheet = document.createElement("style");
@@ -73,7 +72,7 @@ const GUI = (() => {
 })();
 
 const html = GUI;
-}
+
 
 cmd.fn() [
     webgui.text
@@ -89,5 +88,23 @@ cmd.fn() [
  webgui.ui
  command()
  html.ui
+ ]
+
+ cmd.fn() [
+ webgui.gui.create
+ command()
+ html.create
+ ]
+
+  cmd.fn() [
+ webgui.style
+ command()
+  .style
+ ]
+
+   cmd.fn() [
+ webgui.get
+ command()
+  html.get
  ]
 <module>
