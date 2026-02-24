@@ -1,0 +1,29 @@
+console.print("constdata importend");
+cmd.fn() [
+    add.data.str(${cmd^adddata} , ${cmd^data})
+    command()
+    string ${cmd^adddata} = ${cmd^data}
+]
+
+cmd.fn() [
+    add.data.int(${cmd^adddataint} , ${cmd^dataint})
+    command()
+    int64 ${cmd^adddataint} = ${cmd^dataint}
+]
+
+cmd.fn() [
+    add.data.ft(${cmd^adddataft} , ${cmd^dataft})
+    command()
+    ft ${cmd^adddata} = ${cmd^data}
+]
+cmd.fn() [
+    add.data.intx(${cmd^adddataintx} , ${cmd^dataintx})
+    command()
+    intx ${cmd^adddataintx} = ${cmd^dataintx}
+]
+
+cmd.fn() [
+    val.data(${cmd^val})
+    command()
+    ${cmd^val}
+]
