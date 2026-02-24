@@ -1,5 +1,5 @@
 <module="gui">
-addon() {
+addon.app() {
 const GUI = (() => {
     // CSS ve Animasyon Yönetimi
     const styleSheet = document.createElement("style");
