@@ -71,38 +71,21 @@ const GUI = (() => {
 })();
 
 const html = GUI;
-
-
-cmd.fn() [
-    webgui.text
-    command()
-    html.text
- ]
  cmd.fn() [
-   webgui.media
-   command()
-    html.media
- ]
- cmd.fn() [
- webgui.ui
+ webgui.title(${cmd^id} , ${cmd^title})
  command()
- html.ui
- ]
+ html.create.${cmd^id}.h1(${cmd^title})
+]
 
  cmd.fn() [
- webgui.gui.create
+ webgui.text(${cmd^id} , ${cmd^title})
  command()
- html.create
- ]
+ html.create.${cmd^id}.p(${cmd^title})
+]
 
-  cmd.fn() [
- webgui.style
+ cmd.fn() [
+ webgui.media(${cmd^id} , ${cmd^title})
  command()
-  .style
- ]
+ html.create.${cmd^id}.video(${cmd^title})
+]
 
-   cmd.fn() [
- webgui.get
- command()
-  html.get
- ]
